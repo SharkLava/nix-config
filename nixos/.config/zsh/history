@@ -1,0 +1,554 @@
+hx configuration.nix
+update 
+pipx ensurepath 
+pipx ghunt 
+pipx install ghunt 
+ghunt 
+cd 
+ls
+hx configuration.nix
+update 
+exit
+ls
+hx configuration.nix
+update
+hx configuration.nix
+update 
+ls
+cd nixos
+hx rust.nix
+hx configuration.nix
+update 
+ls
+hx configuration.nix
+hx rust.nix 
+hx tex.nix
+hx python.nix
+hx tex.nix
+hx python.nix
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+exit
+exit
+hx  configuration.nix
+cd .. 
+ls
+hx tex.nix
+update
+exit
+ls
+hx rust.nix
+hx configuration.nix
+update
+hx configuration.nix
+hx rust.nix
+cat rust.nix
+cp rust.nix backup.rust
+ls
+hx rust.nix
+rm rust.nix
+cp backup.rust rust.nix 
+exit
+cd .. 
+hx python.nix
+ls
+hx configuration.nix
+update
+hx configuration.nix
+update
+exit
+hx configuration.nix
+update
+hx configuration.nix
+update
+hx configuration.nix
+update 
+thunderbird
+hx configuration.nix
+update 
+rm backup.rust
+ls
+hx configuration.nix
+exit
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+cachix use cuda-maintainers
+sudo cachix use cuda-maintainers
+cp /etc/nixos/cachix.nix ./
+ls
+cp /etc/nixos/cachix/ ./
+cp -r /etc/nixos/cachix/ ./
+ls
+hx configuration.nix
+update
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+ls
+hx cachix.nix
+cd cachix
+ls
+hx cuda-maintainers.nix
+nix-build 
+cd .. 
+nix-build 
+nix-build --flake 
+nix-build --help
+ls
+hx configuration.nix
+cd .. 
+hx configuration.nix
+update 
+update
+hx configuration.nix
+hx python.nix 
+hx configuration.nix
+update 
+reboot
+update 
+hx python.nix
+update 
+hx python.nix
+update 
+ls
+btm 
+hx python.nix
+update 
+hx python.nix
+update 
+exit 
+hx configuration.nix
+update
+hx configuration.nix
+ls
+hx tex.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx rust.nix
+hx configuration.nix
+update 
+hx configuration.nix
+hx python.nix
+update 
+hx python.nix
+updat
+update
+cd
+ls
+hx tex.nix
+cp tex.nix
+cp tex.nix markdown.nix
+hx tex.nix
+hx configuration.nix
+update
+hx tex.nix
+hx markdown.nix
+hx tex.nix
+hx markdown.nix
+hx tex.nix
+hx markdown.nix
+update
+hx configuration.nix
+hx languages
+exit
+cd ../home-manager
+hx julia.hx 
+cp markdown.nix julia.hx
+hx julia.hx
+mv julia.hx julia.nix
+hx julia.nix
+hx configuration.nix
+update 
+julia
+c
+cd
+cd .. 
+cd nixos/
+hx configuration.nix
+update 
+cd .. 
+cp flake.lock flake.backup
+nix flake update 
+update 
+hx home-manager/zsh.nix
+hx home-manager/home.nix
+update 
+hx home-manager/home.nix
+cd .. 
+cd config/nixos/
+hx configuration.nix 
+update 
+hx configuration.nix
+update
+reboot
+cd .. 
+cd nixos/
+ls
+cp julia.nix haskell.nix 
+hx haskell.nix
+hx python.nix
+hx configuration.nix
+hx haskell.nix
+hx configuration.nix
+update 
+ghci 
+exit
+ls
+hx python.nix
+nix-collect-garbage -d 
+exit
+hx python.nix
+update
+hx configuration.nix
+update
+exit
+ls
+cp julia.nix jc141.nix
+hx jc141.nix
+hx configuration.nix
+update 
+hx jc141.nix
+update 
+wine
+hx jc141.nix
+update 
+hx configuration.nix
+hx python.nix
+update
+hx python.nix
+update
+hx haskell.nix
+cabal 
+cd
+cd .. 
+hx haskell.nix
+update 
+hx haskell.nix
+update 
+cd home-manager
+hx helix.nix
+update 
+cd .. 
+cd nixos
+hx configuration.nix
+update
+hx configuration.nix
+hx configuration.nix
+update 
+hx haskell.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update
+mangal
+exit
+hx python.nix
+update 
+hx python.nix
+update
+hx python.nix
+update
+hx python.nix
+rm -rf cachix.nix cachix 
+ls
+hx configuration.nix
+ls
+hx configuration.nix
+update 
+cd .. 
+hx configuration.nix
+update 
+ls
+hx configuration.nix
+update
+reboot
+cd .. 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+plymouthd 
+sudo plymouthd 
+plymouth show-splash
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+vulan 
+hx configuration.nix
+update
+ls
+sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+update
+hx configuration.nix
+cd .. 
+cd ..
+update 
+cd .. 
+cd ..
+hx configuration.nix
+update
+sudo sensors-detect
+hx configuration.nix
+update 
+cd .. 
+hx configuration.nix
+update 
+exti
+exit
+hx configuration.nix 
+exit
+hx configuration.nix
+update
+exit
+hx configuration.nix
+update 
+hx configuration.nix
+update
+hx configuration.nix
+update 
+jq --help
+hx configuration.nix
+update
+youtube-dl
+hx configuration.nix
+update
+hx configuration.nix
+update
+ls
+hx jc141.nix
+mv jc141.nix wine.nix
+ls
+hx configuration.nix
+update 
+cd .. 
+sudo nixos-rebuild switch --flake .#Omen
+cd /boot
+hx configuration.nix 
+updat
+update
+cd .. 
+sudo nix flake update
+upgrade
+ls
+cd nixos
+ls
+hx python.nix
+hx configuration.nix
+update 
+hx configuration.nix
+update
+cd ..
+cd home-manager
+ls
+hx codium.nix
+cd .. 
+cd nixos
+ls
+cd .. 
+hx python.nix
+update
+ls
+hx configuration.nix
+update 
+hx python.nix
+update
+reboot 
+hx configuration.nix
+update
+sudo nix-collect-garbage -d 
+hx configuration.nix
+update 
+hxc configuration.nix
+hx configuration.nix
+update
+upgrade
+cd .. 
+hx configuration.nix
+update
+hx configuration.nix
+update 
+hx ../home-manager/kitty.nix
+update
+cd .. 
+cd ..
+cd config/nixos
+hx configuration.nix
+update 
+hx configuration.nix
+update
+cd ..
+hx configuration.nix
+cd .. 
+hx haskell.nix
+update
+fourmolu
+cd .. 
+hx configuration.nix
+update 
+hx configuration.nix
+update
+ls
+hx r.nix
+alejandra r.nix
+hx r.nix
+alejandra .
+hx configuration.nix
+mkdir lang
+mv r.nix lang
+update
+ls
+mv haskell.nix lang
+mv julia.nix lang
+mv markdown.nix lang
+mv python.nix lang
+mv rust.nix lang
+ls
+mv tex.nix lang
+cd lang
+hx configuration.nix
+cat configuration.nix
+hx configuration.nix
+update
+ls
+s
+hx configuration.nix
+cd .. 
+hx configuration.nix
+update
+hx configuration.nix
+update
+cd lang
+hx configuration.nix
+update
+cd lang
+cd nixos
+hx configuration.nix
+update 
+cd nixos
+hx configuration.nix
+update 
+hx configuration.nix
+update
+ls
+cd lang
+ls
+cd .. 
+cd la
+cd lang
+ls
+hx haskell.nix
+cp haskell.nix cachix.nix
+hx cachix.nix
+cp cachix.nix ../
+cd .. 
+ls
+mkdir utils
+mv cachix.nix utils
+mv wine.nix utils
+cd utils
+cd .. 
+cp lang/default.nix utils/
+rm lang/cachix.nix
+cd utils
+hx default.nix
+ls
+cd .. 
+ls 
+hx configuration.nix
+alejandra .
+update 
+ls
+cp lang/haskell.nix utils/
+cd utils
+cd lang
+sudo nix-collect-garbage -d
+nix-collect-garbage
+nix-store --optimise
+sudo nix-store --optimise
+sudo nix-collect-garbage -d
+cd .. 
+hx configuration.nix
+hx lang/python.nix
+update 
+ls
+hx lang/python.nix
+update 
+exit
+hx configuration.nix
+update
+exit
+cd lang
+hx configuration.nix
+update
+ls
+rm -rf Downloads Music Pictures Templates Videos
+ls
+cd config 
+ls
+cd nixos/
+hx configuration.nix 
+update
+thunderbird 
+hx configuration.nix 
+update 
+hx configuration.nix 
+update 
+hx configuration.nix
+update
+hx configuration.nix
+update
+hx configuration.nix
+updare
+update
+hx configuration.nix
+update
+reboot
+hx configuration.nix
+hx lang/python.nix 
+update
+exit
+: 1685348584:0;hx lang/python.nix
+: 1685348594:0;update 
+: 1685348717:0;cd .. 
+: 1685354207:0;hx configuration.nix
+: 1685354227:0;update 
+: 1685354581:0;hx lang/python.nix
+: 1685354611:0;update
+: 1685354619:0;hx lang/python.nix
+: 1685354964:0;hx hardware-configuration.nix
+: 1685354981:0;hx configuration.nix
+: 1685354997:0;updare
+: 1685354998:0;update
+: 1685355474:0;cd lang
+: 1685355475:0;ls
+: 1685355481:218;hx python.nix
+: 1685355705:0;cd .. 
+: 1685355707:0;hx configuration.nix
+: 1685358399:57;hx python.nix
+: 1685358458:28;update 
+: 1685358642:0;cd .. 
+: 1685358644:0;hx configuration.nix
+: 1685358667:0;update 
+: 1685358936:0;hx configuration.nix
+: 1685358944:0;update 
+: 1685359025:0;hx configuration.nix
+: 1685359048:0;update 
+: 1685359098:0;hx configuration.nix
+: 1685359320:0;update
