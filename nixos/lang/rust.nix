@@ -6,7 +6,7 @@ in
   with nixpkgs;
     stdenv.mkDerivation {
       name = "rust";
-      buildInputs = [openssl rustup ruststable cmake zlib];
+      buildInputs = [openssl rustup ruststable cmake zlib clippy];
 
       shellHook = ''
         export OPENSSL_DIR="${openssl.dev}"

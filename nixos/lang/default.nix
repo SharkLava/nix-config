@@ -6,5 +6,6 @@
     ./haskell.nix
     ./markdown.nix
     ./r.nix
+    # ./rust.nix
   ];
 }

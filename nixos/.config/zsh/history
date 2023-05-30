@@ -524,31 +524,72 @@ hx configuration.nix
 hx lang/python.nix 
 update
 exit
-: 1685348584:0;hx lang/python.nix
-: 1685348594:0;update 
-: 1685348717:0;cd .. 
-: 1685354207:0;hx configuration.nix
-: 1685354227:0;update 
-: 1685354581:0;hx lang/python.nix
-: 1685354611:0;update
-: 1685354619:0;hx lang/python.nix
-: 1685354964:0;hx hardware-configuration.nix
-: 1685354981:0;hx configuration.nix
-: 1685354997:0;updare
-: 1685354998:0;update
-: 1685355474:0;cd lang
-: 1685355475:0;ls
-: 1685355481:218;hx python.nix
-: 1685355705:0;cd .. 
-: 1685355707:0;hx configuration.nix
-: 1685358399:57;hx python.nix
-: 1685358458:28;update 
-: 1685358642:0;cd .. 
-: 1685358644:0;hx configuration.nix
-: 1685358667:0;update 
-: 1685358936:0;hx configuration.nix
-: 1685358944:0;update 
-: 1685359025:0;hx configuration.nix
-: 1685359048:0;update 
-: 1685359098:0;hx configuration.nix
-: 1685359320:0;update
+hx lang/python.nix
+update 
+cd .. 
+hx configuration.nix
+update 
+hx lang/python.nix
+update
+hx lang/python.nix
+hx hardware-configuration.nix
+hx configuration.nix
+updare
+update
+cd lang
+ls
+hx python.nix
+cd .. 
+hx configuration.nix
+hx python.nix
+update 
+cd .. 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update 
+hx configuration.nix
+update
+ls
+git clone https://github.com/SharkLava/nix-config
+gh auth login 
+gh auth 
+gh auth status
+gh auth login
+git clone https://github.com/SharkLava/nix-config
+ls
+cp config/* nix-config
+cp -r config/* nix-config
+cd nix-config/
+ls
+git add -a 
+git add --all 
+git commit -a 
+update 
+ls
+cd nixos
+ls
+hx configuration.nix
+update 
+ffmpeg
+ls
+cd .. 
+hx configuration.nix
+update 
+hx lang/default.nix
+update 
+moc 
+hx configuration.nix
+mocp
+exit
+: 1685423383:0;hx configuration.nix
+: 1685423408:0;update 
+: 1685423467:0;ls
+: 1685423470:0;cd utils
+: 1685423471:0;ls
+: 1685423493:7;hx default.nix
+: 1685423501:0;ls
+: 1685423505:0;cd .. 
+: 1685423511:0;git commit -a

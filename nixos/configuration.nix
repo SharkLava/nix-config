@@ -188,11 +188,9 @@ in {
       pkgs.alejandra
       pkgs.nerdfonts
       pkgs.bottom
-      pkgs.rustfmt
       pkgs.openssl
       pkgs.pkg-config
       pkgs.gcc
-      pkgs.rust-analyzer
       pkgs.lldb
       pkgs.black
       pkgs.clang-tools
@@ -200,11 +198,8 @@ in {
       pkgs.nil
       pkgs.helix
       pkgs.wget
-      pkgs.jq
       pkgs.tesseract
-      pkgs.libstdcxx5
       pkgs.gitFull
-      pkgs.tk
 
       # Utilities
       pkgs.zathura
@@ -212,6 +207,7 @@ in {
       pkgs.unzip
       pkgs.ffmpeg
       pkgs.kitty
+      pkgs.moc
       pkgs.gradience
     ];
 
@@ -258,10 +254,10 @@ in {
         gnomeExtensions.pop-shell
         gnomeExtensions.unite
         firefox
-        thunderbird-bin-unwrapped
+        mangal
+        thunderbird-bin
         picard
         nicotine-plus
-        musikcube
         transmission-gtk
         signal-desktop
         cambalache

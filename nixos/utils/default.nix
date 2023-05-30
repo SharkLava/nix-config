@@ -1,7 +1,7 @@
 {
   imports = [
-    ./cachix.nix
-    ./cuda.nix
+    # ./cachix.nix
+    # ./cuda.nix
     ./wine.nix
   ];
 }
