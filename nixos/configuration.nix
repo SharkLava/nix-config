@@ -255,13 +255,13 @@ in {
         gnomeExtensions.unite
         firefox
         mangal
-        thunderbird-bin
+        betterbird-unwrapped
         picard
         nicotine-plus
         transmission-gtk
         signal-desktop
-        cambalache
         mpv
+        feh
       ];
       shell = pkgs.zsh;
     };

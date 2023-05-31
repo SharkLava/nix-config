@@ -14,6 +14,7 @@
       torch
       flask
       openpyxl
+      autopep8
       pytesseract
       python-lsp-server
       tkinter
