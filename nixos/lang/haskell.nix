@@ -4,5 +4,8 @@
     haskell-language-server
     cabal-install
     fourmolu
+
+    # Packages
+    gtk3
   ];
 }

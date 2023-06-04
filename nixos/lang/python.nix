@@ -10,14 +10,19 @@
       seaborn
       beautifulsoup4
       # tensorflowWithCuda
+      tkinter
       keras
       torch
       flask
+      faker
       openpyxl
       autopep8
       pytesseract
       python-lsp-server
       tkinter
+      qtpy
+      pyside6
+      mysql-connector
       (opencv4.override {
         enableGtk2 = true;
         enableGtk3 = true;

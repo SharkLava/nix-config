@@ -87,9 +87,9 @@ in {
   boot = {
     # Use latest kernel
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelParams = ["quiet" "splash"];
-    plymouth.enable = true;
-    consoleLogLevel = 0;
+    # kernelParams = ["quiet" "splash"];
+    # plymouth.enable = true;
+    # consoleLogLevel = 0;
     initrd.verbose = false;
     loader = {
       # Configure efivars
@@ -123,6 +123,11 @@ in {
 
   # Services
   services = {
+    mysql = {
+      enable = true;
+      package = pkgs.mariadb;
+    };
+
     # Pipewire
     pipewire = {
       enable = true;
@@ -200,14 +205,18 @@ in {
       pkgs.wget
       pkgs.tesseract
       pkgs.gitFull
+      pkgs.mysql-workbench
+      pkgs.gtk3
 
       # Utilities
       pkgs.zathura
+      pkgs.wl-clipboard
       pkgs.zsh
       pkgs.unzip
       pkgs.ffmpeg
       pkgs.kitty
       pkgs.moc
+      pkgs.tk
       pkgs.gradience
     ];
 
