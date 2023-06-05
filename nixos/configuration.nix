@@ -207,11 +207,13 @@ in {
       pkgs.gitFull
       pkgs.mysql-workbench
       pkgs.gtk3
+      pkgs.qtcreator
 
       # Utilities
       pkgs.zathura
       pkgs.wl-clipboard
       pkgs.zsh
+      pkgs.zlib
       pkgs.unzip
       pkgs.ffmpeg
       pkgs.kitty

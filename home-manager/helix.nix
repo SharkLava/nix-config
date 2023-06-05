@@ -73,7 +73,7 @@
       {
         name = "python";
         auto-format = true;
-        formatter = {command = "black";};
+        formatter = {command = "black -q";};
       }
     ];
   };
