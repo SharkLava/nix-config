@@ -19,7 +19,6 @@ in {
   imports = [
     # If you want to use modules from other flakes (such as nixos-hardware):
     inputs.hardware.nixosModules.omen-en00015p
-    # inputs.hardware.nixosModules.common-ssd
     inputs.home-manager.nixosModules.home-manager
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
@@ -73,8 +72,6 @@ in {
       options = "--delete-older-than 30d";
     };
   };
-
-  # FIXME: Add the rest of your current configuration
 
   # Networking
   networking = {
@@ -134,12 +131,6 @@ in {
       alsa.enable = true;
       alsa.support32Bit = true;
       pulse.enable = true;
-      # If you want to use JACK applications, uncomment this
-      #jack.enable = true;
-
-      # use the example session manager (no others are packaged yet so this is enabled by default,
-      # no need to redefine it in your config for now)
-      #media-session.enable = true;
     };
 
     # DE Settings
@@ -150,10 +141,6 @@ in {
       # Enable GNOME
       displayManager = {
         gdm.enable = true;
-        #autoLogin = {
-        #  enable = true;
-        #  user = "ghoul";
-        #};
       };
       desktopManager.gnome.enable = true;
 
@@ -232,8 +219,6 @@ in {
         nicotine-plus
         transmission-gtk
         signal-desktop
-        mpv
-        feh
       ];
       shell = pkgs.zsh;
     };
@@ -256,16 +241,6 @@ in {
       ghoul = import ../home-manager/home.nix;
     };
   };
-
-  # This setups a SSH server. Very important if you're setting up a headless system.
-  # Feel free to remove if you don't need it.
-  #services.openssh = {
-  #  enable = true;
-  #  # Forbid root login through SSH.
-  #  permitRootLogin = "no";
-  # Use keys only. Remove if you want to SSH using password (not recommended)
-  #passwordAuthentication = false;
-  #};
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "22.11";
