@@ -180,46 +180,7 @@ in {
   environment = {
     # Install system packages
     systemPackages = [
-      # Games
-      # pkgs.lutris
-      pkgs.vulkan-tools
-      pkgs.vulkan-headers
-      pkgs.vulkan-loader
-      pkgs.bottles
-      pkgs.melonDS
       nvidia-offload
-
-      # Development
-      pkgs.alejandra
-      pkgs.nerdfonts
-      pkgs.bottom
-      pkgs.openssl
-      pkgs.pkg-config
-      pkgs.gcc
-      pkgs.lldb
-      pkgs.black
-      pkgs.clang-tools
-      pkgs.cmake
-      pkgs.nil
-      pkgs.helix
-      pkgs.wget
-      pkgs.tesseract
-      pkgs.gitFull
-      pkgs.mysql-workbench
-      pkgs.gtk3
-      pkgs.qtcreator
-
-      # Utilities
-      pkgs.zathura
-      pkgs.wl-clipboard
-      pkgs.zsh
-      pkgs.zlib
-      pkgs.unzip
-      pkgs.ffmpeg
-      pkgs.kitty
-      pkgs.moc
-      pkgs.tk
-      pkgs.gradience
     ];
 
     # Remove default GNOME apps

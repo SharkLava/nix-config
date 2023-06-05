@@ -2,6 +2,8 @@
   imports = [
     # ./cachix.nix
     # ./cuda.nix
-    ./wine.nix
+    ./dev_tools.nix
+    ./tools.nix
+    ./games.nix
   ];
 }
