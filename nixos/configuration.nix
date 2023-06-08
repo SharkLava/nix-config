@@ -213,7 +213,6 @@ in {
         gnomeExtensions.pop-shell
         gnomeExtensions.unite
         firefox
-        mangal
         betterbird-unwrapped
         picard
         nicotine-plus
