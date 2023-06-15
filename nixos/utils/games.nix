@@ -3,8 +3,8 @@
     vulkan-tools
     vulkan-headers
     vulkan-loader
-    # bottles
-    # wineWowPackages.wayland
+    bottles
+    wineWowPackages.wayland
     melonDS
   ];
 }

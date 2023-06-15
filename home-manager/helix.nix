@@ -75,6 +75,11 @@
         auto-format = true;
         formatter = {command = "black -q";};
       }
+      {
+        name = "javascript";
+        auto-format = true;
+        formatter = {command = "js-beautify -q";};
+      }
     ];
   };
 }

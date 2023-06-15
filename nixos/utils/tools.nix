@@ -9,6 +9,7 @@
     kitty
     moc
     tk
+    brave
     feh
     mpv
   ];
