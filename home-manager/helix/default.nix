@@ -1,8 +1,7 @@
 { pkgs
 , lib
 , ...
-}:
-{
+}: {
   xdg.configFile =
     let
       settingsFormat = pkgs.formats.toml { };
@@ -11,26 +10,25 @@
     {
       "helix/languages.toml".text =
         genText "config.toml" (import ./languages.nix { inherit pkgs lib; });
-      "helix/themes/catppuccin_macchiato.toml".text =
-        genText "catppuccin_macchiato.toml" (import ./catppuccin_macchiato.nix);
     };
 
   # lsps
-  home.packages = with pkgs;[
-    rust-analyzer
-    nil
-    shfmt
-    nixpkgs-fmt
-    rustfmt
-    clang-tools
-    haskell-language-server
-  ]
-  ++ (with pkgs.nodePackages_latest; [
-    vscode-json-languageserver-bin
-    vscode-html-languageserver-bin
-    vscode-css-languageserver-bin
-    prettier
-  ]);
+  home.packages = with pkgs;
+    [
+      rust-analyzer
+      nil
+      shfmt
+      nixpkgs-fmt
+      rustfmt
+      clang-tools
+      haskell-language-server
+    ]
+    ++ (with pkgs.nodePackages_latest; [
+      vscode-json-languageserver-bin
+      vscode-html-languageserver-bin
+      vscode-css-languageserver-bin
+      prettier
+    ]);
 
   programs.helix = {
     enable = true;
@@ -43,7 +41,7 @@
         auto-pairs = true;
         true-color = true;
         cursorline = true;
-        color-modes = true;
+        # color-modes = true;
         soft-wrap = { enable = false; };
 
         lsp = {
@@ -79,7 +77,6 @@
           ];
           separator = "│";
         };
-
       };
 
       keys.normal = {
@@ -89,6 +86,15 @@
           q = ":q!";
         };
 
+        C-j = map (_: "move_line_down") (lib.range 0 4);
+        C-k = map (_: "move_line_up") (lib.range 0 4);
+        C-e = "scroll_down";
+        C-y = "scroll_up";
+      };
+      keys.select = {
+        C-j = map (_: "extend_line_down") (lib.range 0 4);
+        C-k = map (_: "extend_line_up") (lib.range 0 4);
+      };
     };
   };
 }
