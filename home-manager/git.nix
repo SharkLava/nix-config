@@ -1,9 +1,8 @@
-{
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
+{ inputs
+, lib
+, config
+, pkgs
+, ...
 }: {
   programs = {
     gh = {
@@ -34,7 +33,7 @@
         mergetool.prompt = true;
         pull.ff = "only";
 
-        credential = {credentialStore = "libsecret";};
+        credential = { credentialStore = "libsecret"; };
 
         aliases = {
           st = "status";

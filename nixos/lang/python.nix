@@ -1,4 +1,5 @@
-{pkgs, ...}: let
+{ pkgs, ... }:
+let
   my-python-packages = p:
     with p; [
       pandas
@@ -14,22 +15,23 @@
       keras
       torch
       flask
-      faker
+      # faker
       openpyxl
-      autopep8
-      pytesseract
+      # autopep8
+      # pytesseract
       python-lsp-server
-      tkinter
+      # tkinter
       qtpy
       pyside6
       mysql-connector
-      (opencv4.override {
-        enableGtk2 = true;
-        enableGtk3 = true;
-      })
+      # (opencv4.override {
+      #   enableGtk2 = true;
+      #   enableGtk3 = true;
+      # })
       # other python packages
     ];
-in {
+in
+{
   environment.systemPackages = [
     (pkgs.python3.withPackages my-python-packages)
   ];
