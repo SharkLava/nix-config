@@ -7,7 +7,7 @@
     # inputs.nix-colors.homeManagerModule
     # You can also split up your configuration and import pieces of it here:
     ./zathura.nix
-    ./helix.nix
+    ./helix
     ./git.nix
     ./kitty.nix
     ./zsh.nix
