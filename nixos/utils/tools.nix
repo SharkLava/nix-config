@@ -3,6 +3,8 @@
     zathura
     wl-clipboard
     zsh
+    libsForQt5.kdenlive
+    smartmontools
     zlib
     unzip
     ffmpeg

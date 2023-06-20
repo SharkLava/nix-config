@@ -196,7 +196,7 @@ in {
       pkgs.gnome-tour
       pkgs.gnome-text-editor
       gnome-weather
-      gnome-disk-utility
+      # gnome-disk-utility
       pkgs.gnome-console
       pkgs.gnome-photos
     ];
