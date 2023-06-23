@@ -213,6 +213,8 @@ in
         gnome.gnome-tweaks
         gnomeExtensions.pop-shell
         gnomeExtensions.unite
+        gnomeExtensions.blur-my-shell
+        gnomeExtensions.bluetooth-battery
         firefox
         betterbird-unwrapped
         picard

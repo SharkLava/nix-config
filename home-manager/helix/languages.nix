@@ -94,7 +94,14 @@
     {
       name = "python";
       auto-format = true;
-      formatter = { command = "black -q"; };
+      formatter = {
+        command = "black";
+        args = [
+          "-" # stdin
+          "--quiet"
+          "--line-length=79"
+        ];
+      };
     }
     {
       name = "javascript";

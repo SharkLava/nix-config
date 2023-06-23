@@ -1,8 +1,8 @@
 {
   programs.kitty = {
     enable = true;
-    font.name = "Iosevka Nerd Font Mono";
-    font.size = 12;
+    font.name = "FiraCode Mono";
+    font.size = 10;
     settings = {
       italic_font = "auto";
       bold_italic_font = "auto";

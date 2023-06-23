@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    alejandra
-    nerdfonts
+    fira-mono
     bottom
     openssl
     pkg-config
@@ -16,7 +15,5 @@
     tesseract
     gitFull
     mysql-workbench
-    gtk3
-    qtcreator
   ];
 }
