@@ -3,9 +3,9 @@
     vulkan-tools
     vulkan-headers
     vulkan-loader
-    # bottles
-    lutris
+    bottles
+    # lutris
     wineWowPackages.wayland
-    melonDS
+    # melonDS
   ];
 }

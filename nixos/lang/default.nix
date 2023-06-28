@@ -3,7 +3,7 @@
     # ./tex.nix
     ./python.nix
     # ./julia.nix
-    ./js.nix
+    # ./js.nix
     # ./haskell.nix
     # ./r.nix
     # ./rust.nix
