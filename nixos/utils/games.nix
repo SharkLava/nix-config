@@ -4,7 +4,7 @@
     vulkan-headers
     vulkan-loader
     bottles
-    lutris
+    # lutris
     wineWowPackages.wayland
     # melonDS
   ];

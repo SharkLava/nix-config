@@ -5,6 +5,7 @@
     zsh
     zlib
     unzip
+    unrar
     ffmpeg
     kitty
     moc

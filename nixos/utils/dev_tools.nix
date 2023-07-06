@@ -12,8 +12,8 @@
     nil
     helix
     wget
-    tesseract
+    # tesseract
     gitFull
-    mysql-workbench
+    # mysql-workbench
   ];
 }

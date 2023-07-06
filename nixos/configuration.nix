@@ -121,10 +121,11 @@ in
 
   # Services
   services = {
-    mysql = {
-      enable = true;
-      package = pkgs.mariadb;
-    };
+    # MariaDB
+    # mysql = {
+    #   enable = true;
+    #   package = pkgs.mariadb;
+    # };
 
     # Pipewire
     pipewire = {
