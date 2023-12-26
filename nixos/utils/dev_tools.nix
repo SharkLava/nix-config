@@ -12,6 +12,7 @@
     nil
     helix
     wget
+    ollama
     # tesseract
     gitFull
     # mysql-workbench
