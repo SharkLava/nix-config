@@ -1,13 +1,9 @@
-{ inputs
-, lib
-, config
-, pkgs
+{ pkgs
 , ...
 }: {
   programs = {
     gh = {
       enable = true;
-      enableGitCredentialHelper = true;
     };
     git = {
       enable = true;

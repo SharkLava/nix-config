@@ -45,10 +45,10 @@
 
   gtk = {
     enable = true;
-    theme = {
-      name = "gruvbox-dark";
-      package = pkgs.gruvbox-dark-gtk;
-    };
+    # theme = {
+    # name = "adw-gtk3";
+    # package = pkgs.adw-gtk3;
+    # };
     cursorTheme = {
       name = "phinger-cursors";
       package = pkgs.phinger-cursors;
@@ -63,20 +63,6 @@
   programs = {
     # HomeManager
     home-manager.enable = true;
-    gh = {
-      enable = true;
-      enableGitCredentialHelper = true;
-      settings = {
-        git_protocol = "ssh";
-        editor = "hx";
-        prompt = "enabled";
-
-        aliases = {
-          co = "pr checkout";
-          pv = "pr view";
-        };
-      };
-    };
   };
 
   # Nicely reload system units when changing configs

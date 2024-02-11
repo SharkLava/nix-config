@@ -2,7 +2,7 @@
   programs.vscode = {
     enable = true;
     enableExtensionUpdateCheck = true;
-    package = pkgs.vscodium;
+    package = pkgs.vscode;
     extensions = [
       pkgs.vscode-extensions.ms-python.python
       pkgs.vscode-extensions.ms-python.vscode-pylance

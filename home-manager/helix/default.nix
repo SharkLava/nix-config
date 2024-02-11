@@ -21,21 +21,13 @@
       nixpkgs-fmt
       rustfmt
       clang-tools
-      haskell-language-server
-    ]
-    ++ (with pkgs.nodePackages_latest; [
-      vscode-json-languageserver-bin
-      vscode-html-languageserver-bin
-      vscode-css-languageserver-bin
-      prettier
-    ]);
-
+    ];
   programs.helix = {
     enable = true;
     package = pkgs.helix;
 
     settings = {
-      theme = "gruvbox_dark_hard";
+      theme = "catppuccin_latte";
       editor = {
         line-number = "relative";
         auto-pairs = true;

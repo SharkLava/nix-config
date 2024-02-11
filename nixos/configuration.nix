@@ -42,6 +42,14 @@ in
       #     patches = [ ./change-hello-to-hi.patch ];
       #   });
       # })
+      (final: prev: {
+        steam = prev.steam.override ({ extraPkgs ? pkgs': [ ], ... }: {
+          extraPkgs = pkgs': (extraPkgs pkgs') ++ (with pkgs'; [
+            libgdiplus
+            openssl
+          ]);
+        });
+      })
     ];
     # Configure your nixpkgs instance
     config = {
@@ -93,7 +101,7 @@ in
       # Configure efivars
       efi = {
         canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot/efi";
+        # efiSysMountPoint = "/boot/efi";
       };
 
       # Enable SystemD boot
@@ -176,9 +184,9 @@ in
     gnome.excludePackages = with pkgs.gnome; [
       baobab # disk usage analyzer
       cheese # photo booth
-      eog # image viewer
+      # eog # image viewer
       epiphany # web browser
-      gedit # text editor
+      # gedit # text editor
       simple-scan # document scanner
       totem # video player
       yelp # help viewer
@@ -216,11 +224,9 @@ in
         gnomeExtensions.unite
         gnomeExtensions.blur-my-shell
         gnomeExtensions.bluetooth-battery
+        gnome-feeds
+        gradience
         firefox
-        betterbird-unwrapped
-        picard
-        nicotine-plus
-        transmission-gtk
         signal-desktop
       ];
       shell = pkgs.zsh;

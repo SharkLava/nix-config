@@ -11,5 +11,7 @@
     moc
     feh
     mpv
+    audacity
+    qbittorrent
   ];
 }

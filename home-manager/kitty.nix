@@ -14,6 +14,6 @@
       confirm_os_window_close = 0;
       hide_window_decorations = "yes";
     };
-    theme = "Gruvbox Dark";
+    theme = "seoulbones_light";
   };
 }

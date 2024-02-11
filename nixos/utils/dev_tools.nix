@@ -16,5 +16,7 @@
     # tesseract
     gitFull
     # mysql-workbench
+    gnome-text-editor
+    alejandra
   ];
 }
