@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   language-server = {
     clangd = { command = "clangd"; };
     nil = { command = "nil"; };
@@ -7,6 +7,7 @@
       command = "bash-language-server";
       args = [ "start" ];
     };
+    typst-lsp = { command = "typst-lsp"; };
   };
   language = [
     {
@@ -21,6 +22,14 @@
         args = [ "--parser" "json" ];
         command = "prettier";
       };
+    }
+    {
+      name = "typst";
+      scope = "source.typst";
+      injection-regex = "typ";
+      file-types = [ "typ" ];
+      language-servers = [ "typst-lsp" ];
+      roots = [ ];
     }
     {
       name = "latex";

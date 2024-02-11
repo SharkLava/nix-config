@@ -18,5 +18,7 @@
     # mysql-workbench
     gnome-text-editor
     alejandra
+    typst
+    typstfmt
   ];
 }

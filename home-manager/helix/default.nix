@@ -21,6 +21,7 @@
       nixpkgs-fmt
       rustfmt
       clang-tools
+      typst-lsp
     ];
   programs.helix = {
     enable = true;
