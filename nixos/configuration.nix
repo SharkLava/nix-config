@@ -170,7 +170,7 @@ in
   hardware.pulseaudio.enable = false;
 
   # Wacom
-  hardware.opentabletdriver.enable = true;
+  # hardware.opentabletdriver.enable = true;
   security.rtkit.enable = true;
 
   # System environment setup
