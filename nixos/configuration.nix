@@ -19,7 +19,7 @@ in
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules from other flakes (such as nixos-hardware):
-    inputs.hardware.nixosModules.omen-en00015p
+    inputs.hardware.nixosModules.omen-15-en1007sa
     inputs.home-manager.nixosModules.home-manager
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
@@ -135,6 +135,11 @@ in
     #   package = pkgs.mariadb;
     # };
 
+    # Lorri
+    lorri = {
+      enable = true;
+    };
+
     # Pipewire
     pipewire = {
       enable = true;
@@ -158,8 +163,10 @@ in
       excludePackages = with pkgs; [ xterm ];
 
       # Configure Keymap
-      layout = "us";
-      xkbVariant = "";
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
     };
 
     # CUPS
@@ -227,6 +234,8 @@ in
         gnome-feeds
         gradience
         firefox
+        direnv
+        fira-code-nerdfont
         signal-desktop
       ];
       shell = pkgs.zsh;

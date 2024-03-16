@@ -1,9 +1,4 @@
-{ inputs
-, lib
-, config
-, pkgs
-, ...
-}: {
+{ ... }: {
   programs.zsh = {
     enable = true;
     shellAliases = {
@@ -15,9 +10,12 @@
       size = 10000;
       path = ".config/zsh/history";
     };
+
+    enableAutosuggestions = true;
+
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [ "git" "direnv" ];
       theme = "robbyrussell";
     };
   };

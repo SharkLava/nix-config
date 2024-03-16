@@ -4,8 +4,11 @@
     vulkan-headers
     vulkan-loader
     bottles
-    # lutris
-    melonDS
+
+    # melonDS
+    citra-nightly
+    ryujinx
+    cartridges
     wineWowPackages.wayland
   ];
 }

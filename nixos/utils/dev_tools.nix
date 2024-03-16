@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    fira-mono
     bottom
     openssl
     pkg-config
@@ -9,10 +8,10 @@
     black
     clang-tools
     cmake
+    gnumake
     nil
     helix
     wget
-    ollama
     # tesseract
     gitFull
     # mysql-workbench
@@ -20,5 +19,9 @@
     alejandra
     typst
     typstfmt
+    rustup
+    # globalprotect-openconnect
+    mpi
+    amass
   ];
 }
