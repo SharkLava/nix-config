@@ -43,14 +43,10 @@
 
   gtk = {
     enable = true;
-    # theme = {
-    # name = "adw-gtk3";
-    # package = pkgs.adw-gtk3;
+    # cursorTheme = {
+    # name = "phinger-cursors";
+    # package = pkgs.phinger-cursors;
     # };
-    cursorTheme = {
-      name = "phinger-cursors";
-      package = pkgs.phinger-cursors;
-    };
   };
 
   # Add stuff for your user as you see fit:

@@ -6,9 +6,12 @@
     bottles
 
     # melonDS
-    citra-nightly
+    # citra-nightly
+    lutris
     ryujinx
     cartridges
     wineWowPackages.wayland
+    melonDS
+
   ];
 }

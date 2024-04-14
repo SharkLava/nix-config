@@ -1,6 +1,7 @@
 { ... }: {
   programs.zsh = {
     enable = true;
+    autosuggestion.enable = true;
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch --flake .#Omen";
@@ -11,7 +12,6 @@
       path = ".config/zsh/history";
     };
 
-    enableAutosuggestions = true;
 
     oh-my-zsh = {
       enable = true;

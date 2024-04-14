@@ -175,6 +175,7 @@ in
   # Sound
   sound.enable = true;
   hardware.pulseaudio.enable = false;
+  hardware.enableAllFirmware = true;
 
   # Wacom
   # hardware.opentabletdriver.enable = true;
@@ -199,11 +200,11 @@ in
       yelp # help viewer
       # evince # document viewer
       file-roller # archive manager
-      geary # email client
+      # geary # email client
       seahorse # password manager
 
       # these should be self explanatory
-      gnome-calculator
+      # gnome-calculator
       gnome-calendar
       gnome-characters
       gnome-clocks

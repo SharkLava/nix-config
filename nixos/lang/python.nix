@@ -9,21 +9,24 @@ let
       black
       matplotlib
       seaborn
-      beautifulsoup4
+      # beautifulsoup4
       # tensorflowWithCuda
-      tkinter
+      tensorflow-bin
+      # tkinter
       keras
-      torch
-      flask
+      keras-preprocessing
+      # torch
+      # flask
       # faker
       openpyxl
+      tifffile
       # autopep8
       # pytesseract
       python-lsp-server
       # tkinter
-      qtpy
-      pyside6
-      mysql-connector
+      # qtpy
+      # pyside6
+      # mysql-connector
       # (opencv4.override {
       #   enableGtk2 = true;
       #   enableGtk3 = true;

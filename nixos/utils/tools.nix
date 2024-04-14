@@ -16,8 +16,10 @@
     putty
     remmina
     inetutils
-
+    tor-browser
     mangal
     foliate
+    dynamic-wallpaper
+    appimage-run
   ];
 }
