@@ -7,11 +7,11 @@
 
     # melonDS
     # citra-nightly
-    lutris
-    ryujinx
+    #lutris
+    #ryujinx
     cartridges
     wineWowPackages.wayland
-    melonDS
+    #melonDS
 
   ];
 }

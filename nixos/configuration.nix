@@ -140,6 +140,12 @@ in
       enable = true;
     };
 
+    #Ollama
+    ollama = {
+      enable = true;
+      acceleration = "cuda";
+    };
+
     # Pipewire
     pipewire = {
       enable = true;
@@ -222,7 +228,7 @@ in
 
   # User setup
   users.users = {
-    ghoul = {
+    shark = {
       isNormalUser = true;
       description = "Vishal Kalathil";
       extraGroups = [ "networkmanager" "wheel" ];
@@ -231,9 +237,6 @@ in
         gnomeExtensions.pop-shell
         gnomeExtensions.unite
         gnomeExtensions.blur-my-shell
-        gnomeExtensions.bluetooth-battery
-        gnome-feeds
-        gradience
         firefox
         direnv
         fira-code-nerdfont
@@ -257,7 +260,7 @@ in
     extraSpecialArgs = { inherit inputs; };
     users = {
       # Import your home-manager configuration
-      ghoul = import ../home-manager/home.nix;
+      shark = import ../home-manager/home.nix;
     };
   };
 

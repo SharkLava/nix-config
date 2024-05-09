@@ -22,6 +22,15 @@
     rustup
     # globalprotect-openconnect
     mpi
-    amass
+    # amass
+    oterm
+    tmux
+    jan
+
+    pango
+    gtk4
+    gtk3
+    cairo
+    glib
   ];
 }

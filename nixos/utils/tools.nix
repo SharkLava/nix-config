@@ -11,15 +11,16 @@
     kitty
     feh
     mpv
-    audacity
+    #audacity
     qbittorrent
-    putty
-    remmina
-    inetutils
+    #putty
+    #remmina
+    #inetutils
     tor-browser
-    mangal
-    foliate
-    dynamic-wallpaper
-    appimage-run
+    #mangal
+    #foliate
+    #dynamic-wallpaper
+    #appimage-run
+    monophony
   ];
 }

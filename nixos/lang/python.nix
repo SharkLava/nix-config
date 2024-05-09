@@ -7,19 +7,19 @@ let
       scikit-learn
       ipykernel
       black
-      matplotlib
-      seaborn
+      #matplotlib
+      #seaborn
       # beautifulsoup4
       # tensorflowWithCuda
-      tensorflow-bin
+      #tensorflow-bin
       # tkinter
-      keras
-      keras-preprocessing
+      #keras
+      #keras-preprocessing
       # torch
       # flask
       # faker
-      openpyxl
-      tifffile
+      #openpyxl
+      #tifffile
       # autopep8
       # pytesseract
       python-lsp-server

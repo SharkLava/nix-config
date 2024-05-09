@@ -9,7 +9,7 @@
     };
     history = {
       size = 10000;
-      path = ".config/zsh/history";
+      path = "/home/shark/.config/zsh/history";
     };
 
 
