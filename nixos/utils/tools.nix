@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     zathura
+    poppler
     wl-clipboard
     libreoffice-fresh
     zsh
@@ -22,5 +23,6 @@
     #dynamic-wallpaper
     #appimage-run
     monophony
+    ytermusic
   ];
 }

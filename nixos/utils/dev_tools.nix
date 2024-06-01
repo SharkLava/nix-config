@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     bottom
+    (pkgs.ollama.override { acceleration = "cuda"; })
     openssl
     pkg-config
     gcc
@@ -27,10 +28,14 @@
     tmux
     jan
 
+    micromamba
+
     pango
     gtk4
     gtk3
     cairo
     glib
+
+    cppcheck
   ];
 }

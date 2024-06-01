@@ -58,6 +58,17 @@ in
     };
   };
 
+  # Docker
+  # virtualisation.docker = {
+  #   rootless = {
+  #     enable = true;
+  #     setSocketVariable = true;
+  #   };
+  #   daemon.settings = {
+  #     data-root = "/home/shark/Documents/docker";
+  #   };
+  # };
+
   nix = {
     # This will add each flake input as a registry
     # To make nix3 commands consistent with your flake
@@ -225,13 +236,12 @@ in
       pkgs.gnome-photos
     ];
   };
-
   # User setup
   users.users = {
     shark = {
       isNormalUser = true;
       description = "Vishal Kalathil";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "docker" ];
       packages = with pkgs; [
         gnome.gnome-tweaks
         gnomeExtensions.pop-shell
