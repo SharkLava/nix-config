@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   programs.vscode = {
     enable = true;
     enableExtensionUpdateCheck = true;
@@ -11,6 +11,6 @@
       # pkgs.vscode-extensions.jdinhlife.gruvbox
       pkgs.vscode-extensions.ms-toolsai.jupyter
     ];
-    userSettings = { };
+    userSettings = {};
   };
 }

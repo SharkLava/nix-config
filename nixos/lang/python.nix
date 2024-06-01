@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-let
+{pkgs, ...}: let
   my-python-packages = p:
     with p; [
       pandas
@@ -7,34 +6,9 @@ let
       scikit-learn
       ipykernel
       black
-      #matplotlib
-      #seaborn
-      # beautifulsoup4
-      # tensorflowWithCuda
-      #tensorflow-bin
-      # tkinter
-      #keras
-      #keras-preprocessing
-      # torch
-      # flask
-      # faker
-      #openpyxl
-      #tifffile
-      # autopep8
-      # pytesseract
       python-lsp-server
-      # tkinter
-      # qtpy
-      # pyside6
-      # mysql-connector
-      # (opencv4.override {
-      #   enableGtk2 = true;
-      #   enableGtk3 = true;
-      # })
-      # other python packages
     ];
-in
-{
+in {
   environment.systemPackages = [
     (pkgs.python3.withPackages my-python-packages)
   ];

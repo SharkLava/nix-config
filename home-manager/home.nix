@@ -1,6 +1,6 @@
 # This is your home-manager configuration file
 # Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
-{ pkgs, ... }: {
+{...}: {
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -12,7 +12,6 @@
     ./kitty.nix
     ./zsh.nix
     ./codium.nix
-    # ./nvim.nix
   ];
 
   nixpkgs = {
@@ -57,7 +56,7 @@
   programs = {
     # HomeManager
     home-manager.enable = true;
-    starship = { enable = true; };
+    starship = {enable = true;};
   };
 
   # Nicely reload system units when changing configs

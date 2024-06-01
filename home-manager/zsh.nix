@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
@@ -12,10 +12,9 @@
       path = "/home/shark/.config/zsh/history";
     };
 
-
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "direnv" ];
+      plugins = ["git"];
       theme = "robbyrussell";
     };
   };

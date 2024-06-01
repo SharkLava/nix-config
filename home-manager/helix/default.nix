@@ -1,28 +1,26 @@
-{ pkgs
-, lib
-, ...
+{
+  pkgs,
+  lib,
+  ...
 }: {
-  xdg.configFile =
-    let
-      settingsFormat = pkgs.formats.toml { };
-      genText = x: y: builtins.readFile (settingsFormat.generate x y);
-    in
-    {
-      "helix/languages.toml".text =
-        genText "config.toml" (import ./languages.nix { inherit pkgs lib; });
-    };
+  xdg.configFile = let
+    settingsFormat = pkgs.formats.toml {};
+    genText = x: y: builtins.readFile (settingsFormat.generate x y);
+  in {
+    "helix/languages.toml".text =
+      genText "config.toml" (import ./languages.nix {inherit pkgs lib;});
+  };
 
   # lsps
-  home.packages = with pkgs;
-    [
-      rust-analyzer
-      nil
-      shfmt
-      nixpkgs-fmt
-      rustfmt
-      clang-tools
-      typst-lsp
-    ];
+  home.packages = with pkgs; [
+    rust-analyzer
+    nil
+    shfmt
+    nixpkgs-fmt
+    rustfmt
+    clang-tools
+    typst-lsp
+  ];
   programs.helix = {
     enable = true;
     package = pkgs.helix;
@@ -35,7 +33,7 @@
         true-color = true;
         cursorline = true;
         # color-modes = true;
-        soft-wrap = { enable = false; };
+        soft-wrap = {enable = false;};
 
         lsp = {
           enable = true;
@@ -58,8 +56,8 @@
         file-picker.hidden = false;
 
         statusline = {
-          left = [ "mode" "spinner" ];
-          center = [ "file-name" ];
+          left = ["mode" "spinner"];
+          center = ["file-name"];
           right = [
             "diagnostics"
             "selections"

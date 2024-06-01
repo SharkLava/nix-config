@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     zathura
     poppler
@@ -12,17 +12,6 @@
     kitty
     feh
     mpv
-    #audacity
     qbittorrent
-    #putty
-    #remmina
-    #inetutils
-    tor-browser
-    #mangal
-    #foliate
-    #dynamic-wallpaper
-    #appimage-run
-    monophony
-    ytermusic
   ];
 }

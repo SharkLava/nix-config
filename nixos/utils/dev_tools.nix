@@ -1,7 +1,7 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     bottom
-    (pkgs.ollama.override { acceleration = "cuda"; })
+    (pkgs.ollama.override {acceleration = "cuda";})
     openssl
     pkg-config
     gcc
@@ -18,23 +18,13 @@
     # mysql-workbench
     gnome-text-editor
     alejandra
-    typst
-    typstfmt
-    rustup
-    # globalprotect-openconnect
-    mpi
+    # typst
+    # typstfmt
+    # rustup
+    # mpi
     # amass
-    oterm
-    tmux
-    jan
 
     micromamba
-
-    pango
-    gtk4
-    gtk3
-    cairo
-    glib
 
     cppcheck
   ];
