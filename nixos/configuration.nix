@@ -1,12 +1,12 @@
 # This is your system's configuration file.
 # Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
-{
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
-}: let
+{ inputs
+, lib
+, config
+, pkgs
+, ...
+}:
+let
   nvidia-offload = pkgs.writeShellScriptBin "nvidia-offload" ''
     export __NV_PRIME_RENDER_OFFLOAD=1
     export __NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0
@@ -14,7 +14,8 @@
     export __VK_LAYER_NV_optimus=NVIDIA_only
     exec "$@"
   '';
-in {
+in
+{
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules from other flakes (such as nixos-hardware):
@@ -42,7 +43,7 @@ in {
       #   });
       # })
       (final: prev: {
-        steam = prev.steam.override ({extraPkgs ? pkgs': [], ...}: {
+        steam = prev.steam.override ({ extraPkgs ? pkgs': [ ], ... }: {
           extraPkgs = pkgs':
             (extraPkgs pkgs')
             ++ (with pkgs'; [
@@ -73,7 +74,7 @@ in {
   nix = {
     # This will add each flake input as a registry
     # To make nix3 commands consistent with your flake
-    registry = lib.mapAttrs (_: value: {flake = value;}) inputs;
+    registry = lib.mapAttrs (_: value: { flake = value; }) inputs;
 
     # This will additionally add your inputs to the system's legacy channels
     # Making legacy nix commands consistent as well, awesome!
@@ -178,7 +179,7 @@ in {
       desktopManager.gnome.enable = true;
 
       # Uninstall Xterm
-      excludePackages = with pkgs; [xterm];
+      excludePackages = with pkgs; [ xterm ];
 
       # Configure Keymap
       xkb = {
@@ -242,7 +243,7 @@ in {
     shark = {
       isNormalUser = true;
       description = "Vishal Kalathil";
-      extraGroups = ["networkmanager" "wheel" "docker"];
+      extraGroups = [ "networkmanager" "wheel" "docker" ];
       packages = with pkgs; [
         gnome.gnome-tweaks
         gnomeExtensions.pop-shell
@@ -259,6 +260,7 @@ in {
 
   programs.zsh.enable = true;
 
+
   # Steam
   programs.steam = {
     enable = true;
@@ -268,7 +270,7 @@ in {
 
   # Home Manager
   home-manager = {
-    extraSpecialArgs = {inherit inputs;};
+    extraSpecialArgs = { inherit inputs; };
     users = {
       # Import your home-manager configuration
       shark = import ../home-manager/home.nix;

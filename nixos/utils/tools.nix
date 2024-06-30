@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     zathura
     poppler
@@ -13,5 +13,6 @@
     feh
     mpv
     qbittorrent
+    gnome.gnome-sound-recorder
   ];
 }
