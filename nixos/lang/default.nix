@@ -8,5 +8,6 @@
     # ./r.nix
     # ./rust.nix
     ./go.nix
+    ./assembly.nix
   ];
 }
