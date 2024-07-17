@@ -14,5 +14,6 @@
     mpv
     qbittorrent
     gnome.gnome-sound-recorder
+    dissent
   ];
 }

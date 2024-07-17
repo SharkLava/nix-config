@@ -252,7 +252,7 @@ in
         firefox
         # direnv
         fira-code-nerdfont
-        # signal-desktop
+        signal-desktop
       ];
       shell = pkgs.zsh;
     };
